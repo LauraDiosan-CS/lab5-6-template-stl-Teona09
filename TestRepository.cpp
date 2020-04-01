@@ -18,4 +18,8 @@ void testRepository()
 	cars.addEntity(e3);
 	cars.addEntity(e4);
 	assert(cars.dim() == 4);
+	list <Entity> cars2;
+	cars2 = cars.getAll();
+	assert(cars2.front() == e1);
+	assert(cars2.back() == e4);
 }

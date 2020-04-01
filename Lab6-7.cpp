@@ -7,7 +7,7 @@ int main()
 {
     cout << "testing....."<<'\n';
     testDomain();
-    //testRepository();
+    testRepository();
     //testService();
     cout << "everything looks good :)"<<'\n'<<'\n';
     return 0;

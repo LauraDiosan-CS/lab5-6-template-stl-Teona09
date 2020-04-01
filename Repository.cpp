@@ -24,7 +24,7 @@ int Repository::delEntity(Entity ent)
 
 list < Entity> Repository::getAll()
 {
-	return repoList ;
+	return repoList;
 }
 
 int Repository::dim()
