@@ -28,7 +28,7 @@ void testRepository()
 	for (it = cars2.begin(); it != cars2.end() and i < 4; ++it)
 	{
 		assert(*it == carsArray[i]);
-		cout << carsArray[i].getName();
+		//cout << carsArray[i].getName();
 		i++;
 
 	}
