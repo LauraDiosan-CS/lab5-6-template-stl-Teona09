@@ -2,7 +2,7 @@
 #include<iostream>
 #include<list>
 #include<iterator>
-#include<string>
+#include<vector>
 #include"Entity.h"
 using namespace std;
 
@@ -12,12 +12,12 @@ private:
 	list <Entity> repoList;
 public:
 	Repository();
-	void addEntity(Entity);
-	int delEntity(Entity); 
-	void updateEntity(Entity, char*, int); //TODO
-	bool findEntity(Entity);//TODO
+	void addEntity(const Entity&);
+	int delEntity(const Entity&);
+	void updateEntity(const Entity&, const char*, const char*, const char*); //TODO
+	int findEntity(const Entity&);
 	Entity getItemFromPos(int);//TODO
-	list <Entity> getAll();
+	vector <Entity> getAll();
 	int dim();
 	~Repository();
 };

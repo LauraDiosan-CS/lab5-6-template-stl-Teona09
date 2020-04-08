@@ -27,6 +27,19 @@ Entity::Entity(const Entity& ent)
 	strcpy_s(this->status, strlen(ent.status) + 1, ent.status);
 }
 
+/*Entity::Entity(string line)
+{
+	istringstream iss(line);
+	string tok1, tok2;
+	iss >> tok1 >> tok2;
+	name = new char[tok1.lenght() + 1];
+	strcpy_s(name, tok1.lenght() + 1, tok1.c_str());
+	number = new char[tok1.lenght() + 1];
+	strcpy_s(number, tok1.lenght() + 1, tok1.c_str());
+	status = new char[tok1.lenght() + 1];
+	strcpy_s(status, tok1.lenght() + 1, tok1.c_str());
+}*/
+
 Entity& Entity::operator=(const Entity& ent)
 {
 	if (this == &ent) return *this;
@@ -93,6 +106,37 @@ bool Entity::operator==(const Entity& ent)
 	return(strcmp(name, ent.name) == 0) and (strcmp(number, ent.number) == 0) and \
 		(strcmp(status, ent.status) == 0);
 }
+
+bool Entity::operator<(const Entity& ent)
+{
+	return (strcmp(name, ent.name) < 0);
+}
+
+/*ostream& operator<<(ostream& os, Entity ent)
+{
+	os << ent.name << ' ' << ent.number << ' ' << ent.status << '\n';
+	return os;
+}*/
+
+/*istream& operator>>(istream& is, Entity& ent)
+{
+	cout << "Nume: ";
+	char* name = new char[10];
+	is >> name;
+	cout << "Numar de inmatriculare: ";
+	char* number = new char[10];
+	is >> number;
+	cout << "Status (liber/ocupat): ";
+	char* status = new char[10];
+	is >> status;
+	ent.setName(name);
+	ent.setNumber(number);
+	ent.setStatus(status);
+	delete[] name;
+	delete[] number;
+	delete[] status;
+	return is;
+}*/
 
 Entity::~Entity()
 {

@@ -2,6 +2,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
 class Entity
 {
 private:
@@ -12,7 +13,7 @@ public:
 	Entity();
 	Entity(const char*, const char*, const char*);
 	Entity(const Entity&);
-	Entity(string);//TODO
+	Entity(string); //NOT USED - sth not working
 	Entity& operator=(const Entity&);
 	char* getName();
 	char* getNumber();
@@ -21,9 +22,9 @@ public:
 	void setNumber(const char*);
 	void setStatus(const char*);
 	bool operator==(const Entity&);
-	bool operator<(const Entity&); //TODO
+	bool operator<(const Entity&); 
 	~Entity();
-	friend ostream& operator<<(ostream& os, Entity e);//TODO
-	friend istream& operator>>(istream&, Entity&);//TODO
+	friend ostream& operator<<(ostream& os, Entity e);//NOT USED
+	friend istream& operator>>(istream&, Entity&);//NOT USED
 };
 
