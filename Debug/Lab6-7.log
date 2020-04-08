@@ -1,0 +1,4 @@
+﻿  RepositoryFile.cpp
+C:\Users\Teona Tanasa\source\repos\Lab6-7\RepositoryFile.cpp(54,20): warning C4018: '<': signed/unsigned mismatch
+RepositoryFile.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Entity)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@VEntity@@@Z) referenced in function "public: void __thiscall RepositoryFile::saveToFile(void)" (?saveToFile@RepositoryFile@@QAEXXZ)
+C:\Users\Teona Tanasa\source\repos\Lab6-7\Debug\Lab6-7.exe : fatal error LNK1120: 1 unresolved externals

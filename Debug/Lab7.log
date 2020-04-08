@@ -1,0 +1,7 @@
+﻿  Lab6-7.cpp
+  Service.cpp
+  TestService.cpp
+  UI.cpp
+C:\Users\Teona Tanasa\source\repos\Lab6-7\UI.cpp(31,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Lab7.vcxproj -> C:\Users\Teona Tanasa\source\repos\Lab7\Debug\Lab7.exe

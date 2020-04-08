@@ -12,15 +12,15 @@ int main()
     cout << "testing....."<<'\n';
     testDomain();
     testRepository();
-    testService();
+    //testService();
     cout << "everything looks good :)"<<'\n'<<'\n';
 
-    Repository repository;
+    RepositoryFile repository("Parcare2.txt");
     Service service(repository);
-    service.addObject("Raluca Mitrea", "CJ76RRR", "liber");
-    service.addObject("Dragos Radu", "NT34DDD", "ocupat");
-    service.addObject("Iulia Rotaru", "NT12RRR", "ocupat");
-    service.addObject("Robert Mancas", "B46MMM", "liber");
+    //service.addObject("Raluca", "CJ76RRR", "liber");
+    //service.addObject("Dragos", "NT34DDD", "ocupat");
+    //service.addObject("Iulia", "NT12RRR", "ocupat");
+    //service.addObject("Robert", "B46MMM", "liber");
     UI user(service);
     user.console();
     return 0;

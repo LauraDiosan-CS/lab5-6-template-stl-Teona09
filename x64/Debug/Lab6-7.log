@@ -1,0 +1,33 @@
+﻿  Entity.cpp
+  Lab6-7.cpp
+  Repository.cpp
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\Repository.cpp(38,18): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\Repository.cpp(60,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Service.cpp
+  TestDomain.cpp
+  TestRepository.cpp
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(19,1): error C2059: syntax error: '<<'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(42,1): error C2059: syntax error: '=='
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(44,23): error C2143: syntax error: missing ';' before '{'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(44,23): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(46,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(46,2): error C2371: 'cars2': redefinition; different basic types
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(45): message : see declaration of 'cars2'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(46,10): error C2065: 'cars': undeclared identifier
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,2): error C2059: syntax error: 'for'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,25): error C2143: syntax error: missing ')' before ';'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,30): error C2143: syntax error: missing ';' before '!='
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,27): error C2371: 'it': redefinition; different basic types
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(47): message : see declaration of 'it'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,56): error C2059: syntax error: '++'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(49,60): error C2059: syntax error: ')'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(50,2): error C2143: syntax error: missing ';' before '{'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(50,2): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(57,2): error C2062: type 'void' unexpected
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(58,2): error C2062: type 'void' unexpected
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(59,1): error C2059: syntax error: '}'
+C:\Users\Teona Tanasa\Desktop\Proiecte GIT\lab5-6-template-stl-Teona09\TestRepository.cpp(59,1): error C2143: syntax error: missing ';' before '}'
+  TestService.cpp
+  UI.cpp
+  Generating Code...

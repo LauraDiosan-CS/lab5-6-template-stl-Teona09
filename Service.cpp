@@ -4,20 +4,27 @@ Service::Service()
 {
 }
 
-Service::Service(const Repository& r)
+Service::Service(const RepositoryFile& r)
 {
 	repo = r;
 }
 
-void Service::setRepo(const Repository& r)
+void Service::setRepo(const RepositoryFile& r)
 {
 	repo = r;
+	//repo.saveToFile();
 }
+
+//void Service::initService(const char* fileName)
+//{
+//	repo.loadFromFile(fileName);
+//}
 
 void Service::addObject(const char* n, const char* p, const char* s)
 {
 	Entity e(n,p,s);
 	repo.addEntity(e);
+	repo.saveToFile();
 }
 
 void Service::delObject(const char* p)
@@ -31,6 +38,7 @@ void Service::delObject(const char* p)
 			repo.delEntity(objects[i]);
 			break;
 		}
+	//repo.saveToFile();
 }
 
 void Service::updateObject(const char* number,const char* n,const char* p,const char* s)
@@ -44,6 +52,7 @@ void Service::updateObject(const char* number,const char* n,const char* p,const 
 			repo.updateEntity(objects[i],n,p,s);
 			break;
 		}
+	//repo.saveToFile();
 }
 
 vector <Entity> Service::getObjects()

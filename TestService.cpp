@@ -6,12 +6,14 @@ void testService()
 	Entity e2("Andrei", "CJ44CCC", "ocupat");
 	Entity e3("Mircea", "NT77NNN", "liber");
 	Entity e4("Ana", "NT88TTT", "ocupat");
-	Repository cars;
+	RepositoryFile cars("TestParcare.txt");
 	cars.addEntity(e1);
 	cars.addEntity(e2);
 	//COSTRUCTOR
 	Service serv(cars);
 	//ADD
+	cout << serv.getSize();
+	assert(serv.getSize() == 2);
 	serv.addObject("Mircea", "NT77NNN", "liber");
 	serv.addObject("Ana", "NT88TTT", "ocupat");
 	//GET SIZE

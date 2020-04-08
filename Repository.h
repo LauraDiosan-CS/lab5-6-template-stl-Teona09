@@ -8,7 +8,7 @@ using namespace std;
 
 class Repository
 {
-private:
+protected:
 	list <Entity> repoList;
 public:
 	Repository();
