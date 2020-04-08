@@ -16,6 +16,7 @@ void testRepository()
 	cars.addEntity(e4);
 	//DIM
 	assert(cars.dim() == 4);
+<<<<<<< HEAD
 	//GET ALL
 	assert(cars.getAll()[0] == e1);
 	assert(cars.getAll()[1] == e2);
@@ -38,3 +39,22 @@ void testRepository()
 	assert(cars.getItemFromPos(1) == e2);
 	assert(cars.getItemFromPos(2) == e4);
 }
+=======
+	
+	Entity carsArray[] = { e1,e2,e3,e4 };
+	list <Entity> cars2;
+	cars2 = cars.getAll();
+	list <Entity>::iterator it;
+	int i=0;
+	for (it = cars2.begin(); it != cars2.end() and i < 4; ++it)
+	{
+		assert(*it == carsArray[i]);
+		//cout << carsArray[i].getName();
+		i++;
+
+	}
+
+	assert(cars2.front() == e1);
+	assert(cars2.back() == e4);
+}
+>>>>>>> cf0dd4258d7736eefd6803cd54af71e7b9066342
