@@ -4,7 +4,7 @@ Repository::Repository()
 {
 }
 
-void Repository::addEntity(const Entity &ent)
+void Repository::addEntity(const Entity& ent)
 {
 	repoList.push_back(ent);
 }
@@ -43,7 +43,11 @@ Entity Repository::getItemFromPos(int pos)
 {
 	list<Entity>::iterator it;
 	int i;
-	for (it = repoList.begin(), i =0; it != repoList.end() and i != pos; ++it, ++i);
+	for (it = repoList.begin(), i = 0; it != repoList.end(); ++it)
+		if (i == pos)
+			break;
+	else
+			i++;
 	return (*it);
 }
 

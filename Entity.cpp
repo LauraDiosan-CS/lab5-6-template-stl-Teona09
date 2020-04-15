@@ -14,7 +14,7 @@ Entity::Entity(const char* n, const char* p, const char* s)
 	this->number = new char[strlen(p) + 1];
 	strcpy_s(this->number, strlen(p) + 1, p);
 	this->status = new char[strlen(s) + 1];
-	strcpy_s(this->status, strlen(s) + 1,s);
+	strcpy_s(this->status, strlen(s) + 1, s);
 }
 
 Entity::Entity(const Entity& ent)
@@ -103,7 +103,7 @@ void Entity::setStatus(const char* s)
 
 bool Entity::operator==(const Entity& ent)
 {
-	return(strcmp(name, ent.name) == 0) and (strcmp(number, ent.number) == 0) and \
+	return(strcmp(name, ent.name) == 0) && (strcmp(number, ent.number) == 0) &&\
 		(strcmp(status, ent.status) == 0);
 }
 

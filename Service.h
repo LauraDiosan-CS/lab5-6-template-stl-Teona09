@@ -1,26 +1,28 @@
 #pragma once
-#include<iostream>
-#include "Entity.h"
-#include "RepositoryFile.h"
-using namespace std;
+#include"Entity.h"
+#include"RepositoryFile.h"
+#include"RepoTemplate.h"
+
 class Service
 {
 private:
-	RepositoryFile repo;
-	int psize;
+	RepoTemplate<Entity>& repo;
 public:
-	Service();
-	Service(const RepositoryFile&);
-	void setRepo(const RepositoryFile&);
-	void initService(const char *);
-	void addObject(const char*, const char*, const char*);
-	void delObject(const char* number);
-	void updateObject(const char* number, const char*, const char*, const char*);
+	int parking=0;
+	int extra=0;
+	//Service();
+	Service(RepoTemplate<Entity>& r) :repo(r) { repo = r; };
+	int addObject(const char*, const char*, const char*);
+	int delObject(const char* number);
+	int updateObject(const char* number, const char*, const char*, const char*);
 	int findObjectByNumber(const char* number);
-	vector <Entity> getObjects();
+	list <Entity> getObjects();
 	Entity getObjectByNumber(const char* number);
+	Entity getObjectFromPos(int);
 	int getSize();
-	void enter(Entity&);
+	int enter(Entity&);
+	int exit(Entity&);
+	void setParking(int);
 	~Service();
 };
 

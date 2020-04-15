@@ -8,9 +8,8 @@ class UI
 private:
 	Service serv;
 public:
-	UI();
-	UI(const Service&);
-	void setUI(const Service&);
+	//UI();
+	UI(const Service& s) :serv(s) {};
 	void menu();
 	void stringToUppercase(char*&);
 	void addObject();
@@ -18,6 +17,8 @@ public:
 	void updateObject();
 	void showAllObjects();
 	void console();
+	void enterParking();
+	void exitParking();
 	~UI();
 };
 

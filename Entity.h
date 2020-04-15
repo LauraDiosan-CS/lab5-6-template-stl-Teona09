@@ -22,7 +22,7 @@ public:
 	void setNumber(const char*);
 	void setStatus(const char*);
 	bool operator==(const Entity&);
-	bool operator<(const Entity&); 
+	bool operator<(const Entity&);
 	~Entity();
 	friend ostream& operator<<(ostream& os, Entity e);//NOT USED
 	friend istream& operator>>(istream&, Entity&);//NOT USED
